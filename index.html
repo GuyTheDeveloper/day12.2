@@ -23,6 +23,7 @@
             type="text"
             id="name"
             placeholder="Full Name"
+            required
           />
         </div>
         <div class="col-auto">
@@ -31,6 +32,7 @@
             type="text"
             id="group"
             placeholder="Group Number"
+            required
           />
         </div>
         <div class="col-auto">
@@ -47,9 +49,36 @@
             <option value="yo'q">Yo'q</option>
           </select>
         </div>
+
+        <div class="col-auto">
+          <button class="btn btn-success">enter</button>
+        </div>
       </form>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Group</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Passed</th>
+            <th scope="col">Controls</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
     </div>
 
+    <template id="template">
+      <tr>
+        <th class="numb" scope="row">1</th>
+        <td class="name">Mark</td>
+        <td class="group">Otto</td>
+        <td class="gender">@mdo</td>
+        <td class="success">@mdo</td>
+      </tr>
+    </template>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
