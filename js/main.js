@@ -20,6 +20,17 @@ if (databas.getItem("pupils")) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
+  if (userFull.value.trim() === "") {
+    alert("enter a full name");
+    return;
+  } else if (userGroup.value.trim() === "") {
+    alert("enter group");
+    return;
+  } else if (userGen.value.trim() === "") {
+    alert("enter a gen");
+    return;
+  }
+
   let newUs = new creatorObj(
     userFull.value,
     userGroup.value,
